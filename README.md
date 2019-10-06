@@ -3,14 +3,14 @@
 Simple application to demonstrate authentication using JWT in Node
 
 ## Information
-Models are kept at [Models](NodeJwtServer/model) 
-Validator (@hapi/joi) is used for validating incoming request data, kept at [Validator](master/NodeJwtServer/routes/validation.js) 
+Models are kept at [Models](NodeJwtServer/model) <br>
+Validator (@hapi/joi) is used for validating incoming request data, kept at [Validator](master/NodeJwtServer/routes/validation.js) <br> 
 Auth route is kept at [AuthRoute](NodeJwtServer/routes/auth.js), it has 2 parts 
   * Register a user [Code Link](NodeJwtServer/routes/auth.js#L8), this will create a user in Mongo DB, password is encrypted using (bcrypt) library
   * Login a user [Code Link](NodeJwtServer/routes/auth.js#L44), this will authenticate the user and will issue a JWT token and keep it in the response header **'auth-token'** 
 
-- VerifyToken helper function acting as a middleware is kept at [VerifyToken](master/NodeJwtServer/routes/verifyToken.js)
-- Main application [Link](master/NodeJwtServer/index.js)
+VerifyToken helper function acting as a middleware is kept at [VerifyToken](master/NodeJwtServer/routes/verifyToken.js) <br>
+Main application [Link](master/NodeJwtServer/index.js)
 
 ## Libraries used
 **@hapi/joi:** Used for input validation using schema <br>
